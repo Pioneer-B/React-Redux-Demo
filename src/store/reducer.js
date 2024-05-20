@@ -1,8 +1,13 @@
-const { CHANGE_NAME, CHANGE_COUNTER } = require("./constants.js");
+const {
+  CHANGE_NAME,
+  CHANGE_COUNTER,
+  CHANGE_RECOMMENDS,
+} = require("./constants.js");
 
 const initialState = {
   name: "why",
   counter: 100,
+  recommends: [],
 };
 
 // 定义reducer函数: 纯函数
@@ -16,6 +21,8 @@ function reducer(state = initialState, action) {
       return { ...state, name: action.name };
     case CHANGE_COUNTER:
       return { ...state, counter: state.counter + action.counter };
+    case CHANGE_RECOMMENDS:
+      return { ...state, recommends: action.recommends };
     default:
       return state;
   }

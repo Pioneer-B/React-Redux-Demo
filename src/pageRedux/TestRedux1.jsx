@@ -22,7 +22,7 @@ export class TestRedux extends PureComponent {
   render() {
     return (
       <div>
-        <h2>count: {this.state.counter}</h2>
+        <h2>TestRedux1 count: {this.state.counter}</h2>
         <button onClick={(e) => this.increment(1)}>+1</button>
       </div>
     );
