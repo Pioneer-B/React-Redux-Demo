@@ -6,6 +6,7 @@ import TestReactRedux2 from "./pageReactRedux/TestReactRedux2";
 import PageRtk1 from "./pageRtk/PageRtk1";
 import PageRtk2 from "./pageRtk/pageRtk2";
 import PageMockConnect from "./pageMockConnect/PageMockConnect";
+import PageRtk3 from "./pageRtk/PageRtk3";
 
 class App extends React.Component {
   render() {
@@ -23,6 +24,8 @@ class App extends React.Component {
         <PageRtk1 />
         <hr />
         <PageRtk2 />
+        <hr />
+        <PageRtk3 />
         <hr />
         <PageMockConnect />
       </div>

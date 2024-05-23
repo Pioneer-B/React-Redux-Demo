@@ -14,7 +14,7 @@ export class pageRtk2 extends PureComponent {
     const { counter } = this.props;
     return (
       <div>
-        <h2>pageRtk1 counter : {counter}</h2>
+        <h2>pageRtk2 counter : {counter}</h2>
         <h3>请求推荐模拟数据,保存到RtkStore，PageRtk1使用了模拟数据</h3>
         <button onClick={(e) => this.changeNum(1)}>-1</button>
       </div>
